@@ -1,0 +1,50 @@
+﻿<Window x:Class="lab2_checkboxes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab2_checkboxes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TreeView>
+            <TreeViewItem IsExpanded="True">
+                <TreeViewItem.Header>
+                    <DockPanel>
+                        <CheckBox x:Name="CheckBoxAllItems" Click="CheckBoxAllItems_Checked"/>
+                        <TextBlock>Всі пункти</TextBlock>
+                    </DockPanel>
+                </TreeViewItem.Header>
+
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel>
+                            <CheckBox x:Name="CheckBoxItem1" Click="CheckBoxItem1_Checked" />
+                            <TextBlock>Пункт #1</TextBlock>
+                        </DockPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel>
+                            <CheckBox x:Name="CheckBoxItem2" Click="CheckBoxItem1_Checked"/>
+                            <TextBlock>Пункт #2</TextBlock>
+                        </DockPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <DockPanel>
+                            <CheckBox x:Name="CheckBoxItem3" Click="CheckBoxItem1_Checked"/>
+                            <TextBlock>Пункт #3</TextBlock>
+                        </DockPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+            </TreeViewItem>
+
+        </TreeView>
+
+    </Grid>
+</Window>
